@@ -1,0 +1,121 @@
+.delivery-section{
+  padding: 140px 0px 151px;
+  background-image: url("../../Images/desktop-delivery-bottom-bg.png");
+  background-position: bottom right;
+  background-repeat: no-repeat;
+
+  // background-image: url("../../Images/desktop-delivery-bottom-bg.png");
+  // background-position: bottom right;
+}
+.delivery{
+  text-align: center;
+}
+.delivery__wrapper-title{
+  width: 932px;
+  margin: 0 auto;
+ 
+}
+
+.delivery__title{
+  color: #FFF;
+  text-align: center;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 48px; 
+ padding-bottom: 56px;
+}
+.delivery__title-color{
+  color: #79C8C7;
+}
+.delivery__list{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.delivery__item{
+  width: 350px;
+  background-image: url("../../Images/delivery-bg.png");
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+
+.delivery__item-text{
+  padding-top: 36px;
+  color: #FFF;
+  text-align: center;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 25px;
+  margin-bottom: 24px;
+}
+.delivery__item-color{
+  color: #79C8C7;
+  text-align: center;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px; 
+  display: block;
+}
+.delivery__item-span{
+  color: #FFF;
+  text-align: center;
+  font-size: 13px;
+  font-style: italic;
+  font-weight: 500;
+  line-height: 18px;
+  display: inline-block;
+  margin-bottom: 32px;
+}
+
+// tablet start 
+@media only screen and (max-width:768px){
+ .delivery-section{
+  padding: 100px 50px;
+ }
+ .delivery__wrapper-title{
+  width: 100%;
+ }
+ .delivery__title{
+  text-align: center;
+  font-size: 32px;
+  line-height: 32px;
+  padding-bottom: 48px;
+ }
+ .delivery__list{
+  flex-direction: column;
+ }
+ .delivery__item{
+  width: 100%;
+  background-image: url("../../Images/delivery-bg.png");
+  background-repeat: no-repeat;
+  background-size: 67px 56px;
+  background-position: center top;
+ }
+ .delivery__item + .delivery__item{
+  margin-top: 48px;
+ }
+ .delivery__item-text{
+  margin-bottom: 16px;
+ }
+ .delivery__item-span{
+  margin-bottom: 16px;
+ }
+
+}
+
+// tablet end 
+
+// Mobile start 
+@media only screen and (max-width:562px){
+  .delivery-section{
+    padding: 140px 0px 162px;
+  }
+
+
+}
+
+// Mobile end 
+

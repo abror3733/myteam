@@ -1,0 +1,137 @@
+.build-section{
+  background: #012F34;
+  padding-bottom: 140px;
+  background-image: url("../../Images/desktop-build-bg.png");
+  background-repeat: no-repeat;
+  background-position: right bottom;
+}
+.build{
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.build__wrapper-title{
+ width: 445px; 
+ padding-top: 140px ;
+}
+.build__line{
+  width: 50px;
+  height: 4px;
+  flex-shrink: 0;
+  background: #F67E7E;
+  display: inline-block;
+  margin-bottom: 54px;
+}
+.build__title{
+  color: #FFF;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 48px; 
+}
+.build__content-list{
+  padding-top: 198px;
+}
+.build__wrapper-item{
+  width: 445px;
+}
+.build__item{
+  display: flex;
+  align-items: start;
+}
+.build__item + .build__item{
+  margin-top: 32px;
+}
+.build__item-img{
+  display: inline-block;
+  margin-right: 23px;
+}
+.wrapper-item__title{
+  color: #F67E7E;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px;
+  display: inline-block;
+  margin-bottom: 16px;
+}
+.wrapper-item__text{
+  color: #FFF;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 25px;
+}
+
+// Tablet start 
+@media only screen and (max-width:768px){
+  .build-section{
+    background-image: url("../../Images/tablet-build-bg.png");
+    background-repeat: no-repeat;
+    background-position: right top;
+    padding-left: 50px;
+  }
+  .build{
+    flex-direction: column;
+  }
+ .build__wrapper-title{
+  padding: 100px 0px 64px;
+ }
+ .build__title{
+  font-size: 32px;
+  line-height: 32px;
+ }
+ .build__line{
+  margin-bottom: 32px;
+ }
+ .build__content-list{
+  padding-top: 0px;
+ }
+
+}
+@media only screen and (max-width:604px){
+  .build-section{
+    padding-left: 20px;
+  }
+  .build__wrapper-title{
+    width: 100%;
+  }
+}
+
+// Tablet end 
+// Mobile start 
+@media only screen and (max-width:562px){
+  .build-section{
+    padding-left: 0px;
+    padding-bottom: 64px;
+  }
+  .build__wrapper-title{
+    width: 240px;
+    padding: 64px 0px 56px;
+  }
+  .build__content-list{
+    width: 100%;
+    text-align: center;
+  }
+  .build__item{
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .build__item + .build__item{
+    margin-top: 48px;
+  }
+  .build__wrapper-item{
+    width: 100%;
+  }
+  .build__item-img{
+    margin: 0px 0px 16px 0px;
+  }
+  .wrapper-item__title{
+    margin-bottom: 8px;
+  }
+
+}
+
+// Mobile end 
